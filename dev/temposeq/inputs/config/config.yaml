@@ -30,7 +30,8 @@ pipeline:
 ###### QC parameters
 QC:
   clust_method: "spearman" # For clustering
-  tree_height_cutoff: 0.2  # For clustering
+  studywide_tree_height_cutoff: 0.2
+  group_tree_height_cutoff: null
   dendro_color_by: "group" # Specify how you would like to color the dendrograms
   align_threshold: 0.5     # 50% alignment rate for TempO-Seq Experiments
   gini_cutoff: 0.95
