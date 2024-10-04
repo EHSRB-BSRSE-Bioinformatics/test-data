@@ -86,5 +86,6 @@ DESeq2:
   generate_tgxddi_report: FALSE
   generate_tgxhdaci_report: FALSE
   generate_summary_report: TRUE
+  generate_runningfisher_report: FALSE
   output_digits: 2
   parallel: TRUE
