@@ -1,0 +1,9 @@
+sample_ID	pool	group	uv_dose	timepoint	technical_control	reference_rna	solvent_control
+S4	1	0hr_0	0	0hr	F	F	T
+S5	1	0hr_0	0	0hr	F	F	T
+S10	1	0hr_0	0	0hr	F	F	T
+S55	2	24hr_5	5	24hr	F	F	F
+S60	2	24hr_5	5	24hr	F	F	F
+S119	1	72hr_20	20	72hr	F	F	F
+S120	1	72hr_20	20	72hr	F	F	F
+
