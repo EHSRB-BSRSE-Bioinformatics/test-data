@@ -10,7 +10,6 @@ common:
   project_description: null # description of project for report, optional
   batch_var: null          # For example, multiple plates
   dose: "uv_dose"               # If there is a dose in the experiment; otherwise use NULL
-  solvent_control: "solvent_control"
   platform: "RNA-Seq"      # TempO-Seq Or RNA-Seq
   nmr_threshold: 500000    # 10% of 1M reads for TempOSeq = 100,000; 10% of 10M reads for RNA-Seq = 1,000,000.
   write_additional_output: TRUE # export BMD, biomarker, and biosets output? facet variable should contain chemical and timepoint information
@@ -22,7 +21,7 @@ common:
 ###### Alignment and processing pipeline parameters
 
 pipeline:
-  genomedir: ./inputs/references/ # directory where genome information can be found (the files below should be in this directory)
+  genomedir: ./inputs/reference/ # directory where genome information can be found (the files below should be in this directory)
   genome_filename: Mus_musculus.GRCm39.dna_rm.primary_assembly.fa # filename for genome
   annotation_filename: Mus_musculus.GRCm39.113.gtf # filename for gene annotations
   genome_name: "GRCm39" # used for labeling genome index files
@@ -48,6 +47,7 @@ QC:
   # Column names for metadata, if applicable
   technical_control: "technical_control"
   reference_rna: "reference_rna"
+  solvent_control: "solvent_control"
 
 ###### DESeq2 parameters
 DESeq2:
